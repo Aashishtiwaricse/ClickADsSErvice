@@ -12,7 +12,7 @@ import { Loader2, CheckCircle2, XCircle, Eye, EyeOff } from "lucide-react"
 import axios from "axios"
 import { Link } from "react-router-dom"
 
-const BASE_URL = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com"
+const BASE_URL = import.meta.env.VITE_API_URL || "https://admin.clickads.in"
 
 const ResetPassword: React.FC = () => {
   const location = useLocation()

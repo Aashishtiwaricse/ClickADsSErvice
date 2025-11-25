@@ -11,7 +11,7 @@ const AboutUs = () => {
     const fetchPageContent = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch("https://admin.clickads.in/business-page/about-us");
+        const response = await fetch("https://www.admin.clickads.in/business-page/about-us");
         if (!response.ok) throw new Error("Failed to fetch");
         
         const htmlString = await response.text();

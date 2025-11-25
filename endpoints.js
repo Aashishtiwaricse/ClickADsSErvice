@@ -1,12 +1,12 @@
 // This file holds all the configuration for your app.
-// Instead of typing "https://admin.sarvoclub.com" everywhere, you just use `config.baseUrl`.
+// Instead of typing "https://admin.clickads.in" everywhere, you just use `config.baseUrl`.
 
 // ## SECTION 1: CORE APP & SERVER INFO ##
 // Basic details about your application and where its backend server is located.
 export const config = {
-  appName: 'Sarvo Club',
+  appName: 'Click Ads',
   appVersion: '3.3',
-  baseUrl: import.meta.env?.VITE_API_URL || 'https://admin.sarvoclub.com',
+  baseUrl: import.meta.env?.VITE_API_URL || 'https://admin.clickads.in',
   // A flag used during development to bypass a "maintenance mode" screen
   avoidMaintenanceMode: false,
 };

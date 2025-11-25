@@ -12,7 +12,7 @@ const Banner: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [loading, setLoading] = useState(true)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com"
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in"
 
   useEffect(() => {
     const fetchBanners = async () => {

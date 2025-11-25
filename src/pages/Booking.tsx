@@ -114,7 +114,7 @@ const BookingList: React.FC<BookingListProps> = ({
   limit = 100,
   offset = 1,
 }) => {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com"
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in"
   const [bookings, setBookings] = useState<Booking[]>([])
   const [filteredBookings, setFilteredBookings] = useState<Booking[]>([])
   const [loading, setLoading] = useState(true)
@@ -575,7 +575,7 @@ const BookingList: React.FC<BookingListProps> = ({
                   <div className="mt-6 pt-6 border-t-2 border-gray-100">
                     <div className="flex justify-end">
                       <Button
-                        onClick={() => window.open(`https://admin.sarvoclub.com/admin/booking/customer-invoice/${booking.id}/en`, '_blank')}
+                        onClick={() => window.open(`https://admin.clickads.in/admin/booking/customer-invoice/${booking.id}/en`, '_blank')}
                         className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white"
                       >
                         <Download className="h-4 w-4 mr-2" />

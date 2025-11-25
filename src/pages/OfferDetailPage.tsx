@@ -9,7 +9,7 @@ import Footer from "../components/Footer"
 import Header from "@/components/Header"
 
 const OfferDetailPage: React.FC = () => {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   const { type, id } = useParams<{ type: string; id: string }>()
   const navigate = useNavigate()
   const [loading, setLoading] = useState(true)

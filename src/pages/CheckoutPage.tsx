@@ -98,7 +98,7 @@ interface AddressForm {
 export default function CheckoutPage() {
   const navigate = useNavigate()
   const { toast } = useToast()
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com"
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in"
   const [cartItems, setCartItems] = useState<CartItem[]>([])
   const [loading, setLoading] = useState(false)
   const [cartLoading, setCartLoading] = useState(true)
@@ -318,7 +318,7 @@ export default function CheckoutPage() {
     }
 
     try {
-      const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+      const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
       const zoneId = "a02c55ff-cb84-4bbb-bf91-5300d1766a29";
       const guestId = "7e223db0-9f62-11f0-bba0-779e4e64bbc8";
 

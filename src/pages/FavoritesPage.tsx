@@ -117,7 +117,7 @@ const FavoritesPage = () => {
     setError(null)
 
     try {
-      const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com"
+      const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in"
       const response = await fetch(`${baseUrl}/api/v1/customer/favorite/service-list?offset=1&limit=100`, {
         headers: {
           "Content-Type": "application/json",
@@ -175,7 +175,7 @@ const FavoritesPage = () => {
     }
     
     // Fallback to constructing the URL from the image names
-    const baseUrl = (import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com") + "/storage/app/public/service/"
+    const baseUrl = (import.meta.env.VITE_API_URL || "https://admin.clickads.in") + "/storage/app/public/service/"
     return service.cover_image
       ? `${baseUrl}${service.cover_image}`
       : service.thumbnail

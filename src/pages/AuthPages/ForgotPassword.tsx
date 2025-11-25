@@ -18,7 +18,7 @@ import { Loader2, ArrowLeft, ChevronDown } from "lucide-react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const BASE_URL = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
 
 // Country code options
 const countryCodes = [

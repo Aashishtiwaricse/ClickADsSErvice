@@ -7,7 +7,7 @@
  * @returns {Promise<Object>} API response
  */
 export async function fetchAllServices(page = 1, authToken = null) {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
 
   const headers = {
     "Content-Type": "application/json",
@@ -57,7 +57,7 @@ export async function fetchAllServices(page = 1, authToken = null) {
  * @returns {Promise<Object>} API response
  */
 export async function fetchServiceDetail(serviceId, authToken = null) {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
 
   const headers = {
     Accept: "application/json",
@@ -105,7 +105,7 @@ export async function fetchServiceDetail(serviceId, authToken = null) {
  * @returns {Promise<Object>} API response
  */
 export async function fetchSubcategoryServices(subcategoryId, page = 1, authToken = null) {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
 
   const headers = {
     "Content-Type": "application/json; charset=UTF-8",

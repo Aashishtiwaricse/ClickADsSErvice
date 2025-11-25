@@ -23,7 +23,7 @@ export async function addToCart({
   guestId="7e223db0-9f62-11f0-bba0-779e4e64bbc8",
 }) {
   // 1. Define the base URL and endpoint
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   const endpoint = "/api/v1/customer/cart/add";
 
   // 2. Prepare the request headers

@@ -31,7 +31,7 @@ const TestimonialSlider = () => {
 
   const fetchTestimonials = async () => {
     try {
-      const baseUrl = import.meta.env.VITE_API_URL || 'https://admin.sarvoclub.com';
+      const baseUrl = import.meta.env.VITE_API_URL || 'https://admin.clickads.in';
       const response = await fetch(
         `${baseUrl}/api/v1/customer/landing/contents?limit=10&offset=1`,
         {

@@ -4,7 +4,7 @@
  * Apply a coupon code to the cart
  */
 export const applyCoupon = async (couponCode) => {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   const token = localStorage.getItem("demand_token")
   if (!token) {
     throw new Error("User not authenticated")
@@ -54,7 +54,7 @@ export const applyCoupon = async (couponCode) => {
  * Remove applied coupon from the cart
  */
 export const removeCoupon = async () => {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   const token = localStorage.getItem("demand_token")
   if (!token) {
     throw new Error("User not authenticated")
@@ -97,7 +97,7 @@ export const removeCoupon = async () => {
  * Validate coupon code without applying it
  */
 export const validateCoupon = async (couponCode) => {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   const token = localStorage.getItem("demand_token")
   if (!token) {
     throw new Error("User not authenticated")
@@ -142,7 +142,7 @@ export const validateCoupon = async (couponCode) => {
  * Get available coupons for the user
  */
 export const getAvailableCoupons = async () => {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   const token = localStorage.getItem("demand_token")
   if (!token) {
     throw new Error("User not authenticated")
@@ -180,7 +180,7 @@ export const getAvailableCoupons = async () => {
  * Fetch coupons for display
  */
 export const fetchCoupons = async (setCoupons, setLoadingCoupons) => {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   try {
     const response = await fetch(
       `${baseUrl}/api/v1/customer/coupon?limit=100&offset=1`,

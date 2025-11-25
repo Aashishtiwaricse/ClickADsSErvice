@@ -61,7 +61,7 @@ interface CouponsData {
 }
 
 const ProfilePage = () => {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   const [user, setUser] = useState<User | null>(null)
   const [coupons, setCoupons] = useState<CouponsData | null>(null);
   const [loadingCoupons, setLoadingCoupons] = useState(true);

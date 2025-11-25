@@ -13,7 +13,7 @@ import { Loader2, Eye, EyeOff, ChevronDown } from "lucide-react"
 import heroPainting from "@/assets/hero-ac-repair.jpg"
 import { Link, useNavigate } from "react-router-dom"
 
-const BASE_URL = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com"
+const BASE_URL = import.meta.env.VITE_API_URL || "https://admin.clickads.in"
 
 // Country code options
 const countryCodes = [

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import SocialMediaLinks from "./ui/SocialMediLinks";
 import logo from "../assets/logo.jpeg";
 const Footer = () => {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   return (
     <footer className="bg-secondary/50 border-t border-border pt-12 pb-6">
       <div className="container mx-auto px-4">
@@ -144,7 +144,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-6">
           <p className="text-sm text-muted-foreground text-center">
-            © 2025 hitesh furniture. All rights reserved.
+            © 2025 ClickAds furniture. All rights reserved.
           </p>
         </div>
       </div>

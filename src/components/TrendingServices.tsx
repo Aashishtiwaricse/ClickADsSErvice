@@ -165,7 +165,7 @@ const TrendingServices = () => {
   const fetchTrendingServices = async () => {
     try {
       const baseUrl =
-        import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+        import.meta.env.VITE_API_URL || "https://admin.clickads.in";
       const response = await fetch(
         `${baseUrl}/api/v1/customer/service/trending?limit=10&offset=1`,
         {

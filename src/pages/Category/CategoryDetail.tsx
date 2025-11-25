@@ -66,7 +66,7 @@ interface CategoryResponse {
 }
 
 const CategoryChildList: React.FC = () => {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   const { id } = useParams<{ id: string }>();
   const categoryId = id || "";
   const token = undefined;

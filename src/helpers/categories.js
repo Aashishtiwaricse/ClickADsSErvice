@@ -1,7 +1,7 @@
 
 
 async function fetchCategories(offset = 1, limit = 10) {
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   const url = `${baseUrl}/api/v1/customer/category?offset=${offset}&limit=${limit}`;
 
   const headers = {

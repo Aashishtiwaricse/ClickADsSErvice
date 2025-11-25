@@ -3,7 +3,7 @@ export const toggleFavorite = async (serviceId, authToken) => {
     throw new Error("Authentication required");
   }
 
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com";
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in";
   const response = await fetch(`${baseUrl}/api/v1/customer/favorite/service`, {
     method: "POST",
     headers: {

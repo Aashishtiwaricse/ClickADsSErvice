@@ -17,7 +17,7 @@ interface OtpVerificationProps {
   identityType?: "phone" | "email"
 }
 
-const BASE_URL = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com"
+const BASE_URL = import.meta.env.VITE_API_URL || "https://admin.clickads.in"
 
 const OtpVerification: React.FC<OtpVerificationProps> = ({ identity: propIdentity, identityType: propIdentityType }) => {
   const location = useLocation()

@@ -40,7 +40,7 @@ const Header = () => {
   const [allServices, setAllServices] = useState<Service[]>([])
   const [servicesLoaded, setServicesLoaded] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
-  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com"
+  const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in"
   const location = useLocation()
   const navigate = useNavigate()
 
@@ -173,7 +173,7 @@ const Header = () => {
     if (!token) return
 
     try {
-      const baseUrl = import.meta.env.VITE_API_URL || "https://admin.sarvoclub.com"
+      const baseUrl = import.meta.env.VITE_API_URL || "https://admin.clickads.in"
       const response = await fetch(`${baseUrl}/api/v1/customer/favorite/service-list?offset=1&limit=100`, {
         headers: {
           "Content-Type": "application/json",
@@ -261,7 +261,7 @@ const Header = () => {
               <div className="relative">
                 <img 
                   src={logo || "/placeholder.svg"} 
-                  alt="SarvoClub" 
+                  alt="sclickads" 
                   className="w-8 h-8 lg:w-10 lg:h-10 object-contain rounded-lg transition-transform duration-300 group-hover:scale-110" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-lg" />
