@@ -33,7 +33,8 @@ const Banner: React.FC = () => {
         )
         const data = await response.json()
         if (data.response_code === "default_200" && data.content.data) {
-          setBanners(data.content.data.filter((banner: BannerItem) => banner.is_active === 1))
+          setBanners(data.content.data.filter((banner: BannerItem) => String(banner.is_active) === "1"
+))
         }
       } catch (error) {
         console.error("Failed to fetch banners:", error)
