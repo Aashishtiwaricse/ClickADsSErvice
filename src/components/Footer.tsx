@@ -131,7 +131,7 @@ const Footer = () => {
                   to="/register"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Register as a professional
+                  Register as service provider
                 </Link>
               </li>
             </ul>
@@ -144,7 +144,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-6">
           <p className="text-sm text-muted-foreground text-center">
-            © 2025 ClickAds furniture. All rights reserved.
+            © 2025 ClickAds All rights reserved.
           </p>
         </div>
       </div>
