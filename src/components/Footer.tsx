@@ -127,12 +127,27 @@ const Footer = () => {
             <h4 className="font-bold mb-4">For professionals</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link
-                  to="/register"
+                {/* <Link
+                  to="/provider"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Register as service provider
-                </Link>
+                </Link> */}
+                <a
+  href={`${import.meta.env.VITE_API_URL}/provider/auth/sign-up`}
+  className="text-muted-foreground hover:text-primary transition-colors"
+>
+  Register as service provider
+</a>
+
+              </li>
+                <li>
+                <a
+  href={`${import.meta.env.VITE_API_URL}/provider/auth/login`}
+  className="text-muted-foreground hover:text-primary transition-colors">
+  Login as provider
+</a>
+
               </li>
             </ul>
           </div>
