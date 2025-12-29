@@ -154,6 +154,7 @@ const AdvertisementList: React.FC<AdvertisementListProps> = ({ token, limit = 5,
 
       const data: AdvertisementResponse = await response.json()
 
+      console.log("this is data for all responce",data)
       if (data.response_code === "default_200") {
         setAdvertisements(data.content.data)
         setCurrentPage(data.content.current_page)

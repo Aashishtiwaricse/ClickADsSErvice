@@ -32,16 +32,37 @@ const Banner: React.FC = () => {
           }
         )
         const data = await response.json()
-        if (data.response_code === "default_200" && data.content.data) {
-          setBanners(data.content.data.filter((banner: BannerItem) => String(banner.is_active) === "1"
-))
-        }
+         console.log("📌 Full API Response:", data);
+
+    if (data?.content?.data) {
+  // alert("this data is true!!!")
+
+  // Convert object → array
+  const itemsArray = Object.values(data.content.data);
+
+  console.log("📌 Converted Array:", itemsArray);
+
+  const validBanners = itemsArray
+    .filter((item: any) => item.is_active == 1)
+    .map((item: any) => ({
+      ...item,
+      banner_image_full_path: item.banner_image_full_path || item.image_full_path,
+    }));
+
+  console.log("✔ Filtered Banners:", validBanners);
+
+  setBanners(validBanners);
+}
+
+
+
       } catch (error) {
         console.error("Failed to fetch banners:", error)
       } finally {
         setLoading(false)
       }
     }
+
 
     fetchBanners()
   }, [])
@@ -90,6 +111,7 @@ const Banner: React.FC = () => {
       </div>
     )
   }
+  
 
   if (banners.length === 0) {
     return (
