@@ -369,7 +369,7 @@ export default function CheckoutPage() {
 
       const response = await sendBookingRequest(bookingConfig);
 
-      if (response.response_code.include("200") || response.response_code === "200") {
+if (response.response_code?.includes("200")) {
         setBookingSuccess(true);
         // Clear cart
         localStorage.removeItem("cart");

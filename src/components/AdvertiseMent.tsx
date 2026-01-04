@@ -129,19 +129,20 @@ const AdvertisementList: React.FC<AdvertisementListProps> = ({ token, limit = 5,
       setError(null)
 
       const headers: HeadersInit = {
-        "Content-Type": "application/json",
-        zoneId: "a02c55ff-cb84-4bbb-bf91-5300d1766a29",
-        "X-localization": "en",
-        guest_id: "7e223db0-9f62-11f0-bba0-779e4e64bbc8",
-        "Accept-Charset": "UTF-8",
-      }
+  "zone_id": "a02c55ff-cb84-4bbb-bf91-5300d1766a29",
+  "X-localization": "en",
+  "guest_id": "7e223db0-9f62-11f0-bba0-779e4e64bbc8",
+  "Accept": "application/json",
+}
 
-      if (token) {
-        headers["Authorization"] = `Bearer ${token}`
-      }
+if (token) {
+  headers["Authorization"] = `Bearer ${token}`
+}
+
 
       const response = await fetch(
-        `${baseUrl}/api/v1/customer/advertisements/ads-list?limit=${limit}&offset=${page}`,
+`${baseUrl}/api/v1/customer/advertisements/ads-list?limit=${limit}&offset=${page}`,
+
         {
           method: "GET",
           headers: headers,
@@ -155,7 +156,8 @@ const AdvertisementList: React.FC<AdvertisementListProps> = ({ token, limit = 5,
       const data: AdvertisementResponse = await response.json()
 
       console.log("this is data for all responce",data)
-      if (data.response_code === "default_200") {
+      if (String(data.response_code).includes("200")) {
+
         setAdvertisements(data.content.data)
         setCurrentPage(data.content.current_page)
         setTotalPages(data.content.last_page)

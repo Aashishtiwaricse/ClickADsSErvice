@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Progress } from "./ui/progress";
-import logo from "../assets/logo.jpeg"
+import logo from "../assets/logo1.jpeg"
 
 const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
   const [progress, setProgress] = useState(0);
